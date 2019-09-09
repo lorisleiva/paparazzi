@@ -12,4 +12,20 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+   .sass('resources/css/app.css', 'public/css');
+
+mix.webpackConfig({
+   resolve: {
+      alias: {
+         '@components': path.resolve(__dirname, 'resources/js/components'),
+      }
+   }
+})
+
+mix.disableSuccessNotifications()
+
+if (mix.inProduction()) {
+   mix.version()
+} else {
+   mix.sourceMaps()
+}
