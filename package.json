@@ -16,5 +16,8 @@
         "resolve-url-loader": "2.3.1",
         "vue": "^2.5.17",
         "vue-template-compiler": "^2.6.10"
+    },
+    "dependencies": {
+        "tailwindcss": "^1.1.2"
     }
 }
