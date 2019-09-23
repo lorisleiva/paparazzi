@@ -13,13 +13,73 @@
                 Qui enim officia aute minim id sint anim ex aliqua ut laborum. Incididunt commodo ut quis sint excepteur mollit incididunt laboris aute incididunt culpa eu. Est amet deserunt esse minim reprehenderit pariatur commodo pariatur. Sunt excepteur adipisicing veniam sit velit pariatur cupidatat non dolor. Deserunt veniam labore ullamco in incididunt ipsum amet in mollit reprehenderit laborum laborum.
             </base-panel>
         </section>
+        <section class="m-16">
+            <h1 class="text-5xl font-semibold mb-8">Buttons</h1>
+            <table class="w-full">
+                <tr class="font-semibold">
+                    <td>Default</td>
+                    <td>Danger</td>
+                    <td>Primary</td>
+                </tr>
+                <tr>
+                    <td class="py-6">
+                        <base-button @click="sayHi">Default</base-button>
+                    </td>
+                    <td class="py-6">
+                        <base-button danger>Danger</base-button>
+                    </td>
+                    <td class="py-6">
+                        <base-button primary>Primary</base-button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="py-6">
+                        <base-button small>Default</base-button>
+                    </td>
+                    <td class="py-6">
+                        <base-button small danger>Danger</base-button>
+                    </td>
+                    <td class="py-6">
+                        <base-button small primary>Primary</base-button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="py-6">
+                        <base-button disabled>Default</base-button>
+                    </td>
+                    <td class="py-6">
+                        <base-button disabled danger>Danger</base-button>
+                    </td>
+                    <td class="py-6">
+                        <base-button disabled primary>Primary</base-button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="py-6">
+                        <base-button small disabled>Default</base-button>
+                    </td>
+                    <td class="py-6">
+                        <base-button small disabled danger>Danger</base-button>
+                    </td>
+                    <td class="py-6">
+                        <base-button small disabled primary>Primary</base-button>
+                    </td>
+                </tr>
+            </table>
+        </section>
     </div>
 </template>
 
 <script>
 import BasePanel from './BasePanel'
+import BaseButton from './BaseButton'
 
 export default {
-    components: { BasePanel },
+    components: { BasePanel, BaseButton },
+    methods: {
+        sayHi () {
+            alert('Hi')
+        }
+    }
 }
 </script>
