@@ -12,6 +12,12 @@
             <base-panel class="mb-8" title="My title" sub="Some metadata">
                 Qui enim officia aute minim id sint anim ex aliqua ut laborum. Incididunt commodo ut quis sint excepteur mollit incididunt laboris aute incididunt culpa eu. Est amet deserunt esse minim reprehenderit pariatur commodo pariatur. Sunt excepteur adipisicing veniam sit velit pariatur cupidatat non dolor. Deserunt veniam labore ullamco in incididunt ipsum amet in mollit reprehenderit laborum laborum.
             </base-panel>
+            <base-panel class="mb-8" title="Leads" sub="236 leads ∙ 102 opportunities">
+                <template #actions>
+                    <base-button>Add new lead</base-button>
+                </template>
+                Magna velit proident ea elit ipsum ex mollit labore eiusmod reprehenderit officia esse nulla. Occaecat magna duis deserunt non amet aute quis. Laborum aute aliquip labore qui anim nisi ad consectetur culpa proident laborum exercitation. Officia veniam proident nostrud commodo qui. Cupidatat cupidatat ex et anim ex ut officia laborum aute ullamco. Aute est et ipsum cillum cillum fugiat nulla. Sit minim fugiat dolore consectetur nostrud ipsum quis.
+            </base-panel>
         </section>
         <section class="m-16">
             <h1 class="text-5xl font-semibold mb-8">Buttons</h1>
