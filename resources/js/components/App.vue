@@ -71,6 +71,72 @@
                         <base-button small disabled primary>Primary</base-button>
                     </td>
                 </tr>
+                <tr>
+                    <td class="py-6">
+                        <base-button icon="camera">Default</base-button>
+                    </td>
+                    <td class="py-6">
+                        <base-button icon="camera" danger>Danger</base-button>
+                    </td>
+                    <td class="py-6">
+                        <base-button icon="camera" primary>Primary</base-button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="py-6">
+                        <base-button small icon="camera">Default</base-button>
+                    </td>
+                    <td class="py-6">
+                        <base-button small icon="camera" danger>Danger</base-button>
+                    </td>
+                    <td class="py-6">
+                        <base-button small icon="camera" primary>Primary</base-button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="py-6">
+                        <base-button disabled icon="camera">Default</base-button>
+                    </td>
+                    <td class="py-6">
+                        <base-button disabled icon="camera" danger>Danger</base-button>
+                    </td>
+                    <td class="py-6">
+                        <base-button disabled icon="camera" primary>Primary</base-button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="py-6">
+                        <base-button disabled small icon="camera">Default</base-button>
+                    </td>
+                    <td class="py-6">
+                        <base-button disabled small icon="camera" danger>Danger</base-button>
+                    </td>
+                    <td class="py-6">
+                        <base-button disabled small icon="camera" primary>Primary</base-button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="py-6">
+                        <base-button loading>Default</base-button>
+                    </td>
+                    <td class="py-6">
+                        <base-button loading danger>Danger</base-button>
+                    </td>
+                    <td class="py-6">
+                        <base-button loading primary>Primary</base-button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="py-6">
+                        <base-button loading small>Default</base-button>
+                    </td>
+                    <td class="py-6">
+                        <base-button loading small danger>Danger</base-button>
+                    </td>
+                    <td class="py-6">
+                        <base-button loading small primary>Primary</base-button>
+                    </td>
+                </tr>
             </table>
         </section>
         <section class="m-16">
