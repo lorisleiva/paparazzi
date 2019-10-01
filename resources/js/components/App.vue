@@ -160,6 +160,21 @@
                 ></base-icon>
             </div>
         </section>
+        <section class="m-16">
+            <h1 class="text-5xl font-semibold mb-8">Input</h1>
+            <base-panel>
+                <base-input v-model="name" label="Name" class="mb-4"></base-input>
+                <base-input v-model="dateOfBirth" label="Date of birth" type="date" class="mb-4"></base-input>
+                <div class="text-xs mb-2">
+                    <span class="font-semibold">name:</span>
+                    <span v-text="name"></span>
+                </div>
+                <div class="text-xs">
+                    <span class="font-semibold">dateOfBirth:</span>
+                    <span v-text="dateOfBirth"></span>
+                </div>
+            </base-panel>
+        </section>
     </div>
 </template>
 
@@ -167,12 +182,15 @@
 import BasePanel from './BasePanel'
 import BaseButton from './BaseButton'
 import BaseIcon from './BaseIcon'
+import BaseInput from './BaseInput'
 
 export default {
-    components: { BasePanel, BaseButton, BaseIcon },
+    components: { BasePanel, BaseButton, BaseIcon, BaseInput },
     data () {
         return {
             icons: ['camera', 'application', 'cog', 'history', 'link', 'paint', 'trash'],
+            name: 'foobar',
+            dateOfBirth: '',
         }
     },
     methods: {

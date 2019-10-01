@@ -15,5 +15,6 @@ module.exports = {
         require('tailwindcss-plugins/gradients'),
         require('tailwindcss-plugins/animations'),
         require('tailwindcss-plugins/keyframes/spin'),
+        require('@tailwindcss/custom-forms'),
     ]
 }
