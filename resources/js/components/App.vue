@@ -166,10 +166,7 @@
                 <base-input v-model="name" label="Name" class="mb-4"></base-input>
                 <base-input v-model="dateOfBirth" label="Date of birth" type="date" class="mb-4"></base-input>
                 <base-select v-model="plan" :options="availablePlans" label="Select a plan" class="mb-4"></base-select>
-                <div class="text-xs">
-                    <span class="font-semibold">plan:</span>
-                    <span v-text="plan"></span>
-                </div>
+                <base-checkbox v-model="subscribeToNewsletter" label="Subscribe me to your monthly newsletter"></base-checkbox>
             </base-panel>
         </section>
     </div>
@@ -181,9 +178,10 @@ import BaseButton from './BaseButton'
 import BaseIcon from './BaseIcon'
 import BaseInput from './BaseInput'
 import BaseSelect from './BaseSelect'
+import BaseCheckbox from './BaseCheckbox'
 
 export default {
-    components: { BasePanel, BaseButton, BaseIcon, BaseInput, BaseSelect },
+    components: { BasePanel, BaseButton, BaseIcon, BaseInput, BaseSelect, BaseCheckbox },
     data () {
         return {
             icons: ['camera', 'application', 'cog', 'history', 'link', 'paint', 'trash'],
@@ -196,6 +194,7 @@ export default {
                 { value: 'premium', name: 'Premium ($10/month)' }, 
                 { value: 'business', name: 'Business ($15/month)' }
             ],
+            subscribeToNewsletter: false,
         }
     },
     methods: {
