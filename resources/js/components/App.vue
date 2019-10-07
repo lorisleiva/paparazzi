@@ -161,17 +161,14 @@
             </div>
         </section>
         <section class="m-16">
-            <h1 class="text-5xl font-semibold mb-8">Input</h1>
+            <h1 class="text-5xl font-semibold mb-8">Form elements</h1>
             <base-panel>
                 <base-input v-model="name" label="Name" class="mb-4"></base-input>
                 <base-input v-model="dateOfBirth" label="Date of birth" type="date" class="mb-4"></base-input>
-                <div class="text-xs mb-2">
-                    <span class="font-semibold">name:</span>
-                    <span v-text="name"></span>
-                </div>
+                <base-select v-model="plan" :options="availablePlans" label="Select a plan" class="mb-4"></base-select>
                 <div class="text-xs">
-                    <span class="font-semibold">dateOfBirth:</span>
-                    <span v-text="dateOfBirth"></span>
+                    <span class="font-semibold">plan:</span>
+                    <span v-text="plan"></span>
                 </div>
             </base-panel>
         </section>
@@ -183,14 +180,22 @@ import BasePanel from './BasePanel'
 import BaseButton from './BaseButton'
 import BaseIcon from './BaseIcon'
 import BaseInput from './BaseInput'
+import BaseSelect from './BaseSelect'
 
 export default {
-    components: { BasePanel, BaseButton, BaseIcon, BaseInput },
+    components: { BasePanel, BaseButton, BaseIcon, BaseInput, BaseSelect },
     data () {
         return {
             icons: ['camera', 'application', 'cog', 'history', 'link', 'paint', 'trash'],
-            name: 'foobar',
-            dateOfBirth: '',
+            name: 'John Doe',
+            dateOfBirth: '1990-01-01',
+            plan: 'starter',
+            availablePlans: [
+                { value: 'free', name: 'Free' }, 
+                { value: 'starter', name: 'Starter ($5/month)' }, 
+                { value: 'premium', name: 'Premium ($10/month)' }, 
+                { value: 'business', name: 'Business ($15/month)' }
+            ],
         }
     },
     methods: {
