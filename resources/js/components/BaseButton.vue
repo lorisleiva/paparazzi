@@ -27,8 +27,6 @@
 </template>
 
 <script>
-import BaseIcon from './BaseIcon'
-
 export default {
     props: {
         icon: String,
@@ -37,9 +35,6 @@ export default {
         small: Boolean,
         disabled: Boolean,
         loading: Boolean,
-    },
-    components: {
-        BaseIcon
     },
     computed: {
         isDisabled () {

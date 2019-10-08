@@ -173,15 +173,7 @@
 </template>
 
 <script>
-import BasePanel from './BasePanel'
-import BaseButton from './BaseButton'
-import BaseIcon from './BaseIcon'
-import BaseInput from './BaseInput'
-import BaseSelect from './BaseSelect'
-import BaseCheckbox from './BaseCheckbox'
-
 export default {
-    components: { BasePanel, BaseButton, BaseIcon, BaseInput, BaseSelect, BaseCheckbox },
     data () {
         return {
             icons: ['camera', 'application', 'cog', 'history', 'link', 'paint', 'trash'],
