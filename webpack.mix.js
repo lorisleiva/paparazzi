@@ -23,6 +23,7 @@ mix.webpackConfig({
       alias: {
          '@components': path.resolve(__dirname, 'resources/js/components'),
          '@plugins$': path.resolve(__dirname, 'resources/js/plugins'),
+         '@stubs$': path.resolve(__dirname, 'resources/js/stubs'),
       }
    }
 })
