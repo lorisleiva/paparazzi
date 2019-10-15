@@ -24,6 +24,7 @@ mix.webpackConfig({
          '@components': path.resolve(__dirname, 'resources/js/components'),
          '@plugins$': path.resolve(__dirname, 'resources/js/plugins'),
          '@stubs$': path.resolve(__dirname, 'resources/js/stubs'),
+         '@router$': path.resolve(__dirname, 'resources/js/router'),
       }
    }
 })
