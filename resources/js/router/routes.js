@@ -14,4 +14,14 @@ export default [
         component: require('@components/AuthRegister').default,
         name: 'AuthRegister',
     },
+    {
+        path: '/password/reset',
+        component: require('@components/AuthPasswordEmail').default,
+        name: 'AuthPasswordEmail',
+    },
+    {
+        path: '/password/reset/:token',
+        component: require('@components/AuthPasswordReset').default,
+        name: 'AuthPasswordReset',
+    },
 ]
