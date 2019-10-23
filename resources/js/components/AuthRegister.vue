@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full max-w-sm md:max-w-2xl mx-auto">
+    <base-center-container wrapper="w-full max-w-sm md:max-w-2xl">
         <base-panel class="flex" no-padding>
             <div class="relative flex-1 hidden md:block bg-cover bg-center" style="background-image: url('img/register.jpg')">
                 <div class="absolute bottom-0 right-0 text-gray-200 mr-6 mb-4">
@@ -14,7 +14,7 @@
                 <base-button primary class="ml-auto">Register</base-button>
             </div>
         </base-panel>
-    </div>
+    </base-center-container>
 </template>
 
 <script>
