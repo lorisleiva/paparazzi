@@ -24,4 +24,9 @@ export default [
         component: require('@components/AuthPasswordReset').default,
         name: 'AuthPasswordReset',
     },
+    {
+        path: '/paparazzi',
+        component: require('@components/PaparazziIndex').default,
+        name: 'PaparazziIndex',
+    },
 ]
