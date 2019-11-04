@@ -1,6 +1,10 @@
 module.exports = {
     theme: {
-        extend: {},
+        extend: {
+            maxHeight: {
+                md: '28rem',
+            }
+        },
         gradients: theme => ({
             primary: ['45deg', theme('colors.blue.400'), theme('colors.blue.600')]
         }),

@@ -1,5 +1,8 @@
 <template>
-    <div class="bg-white rounded shadow border overflow-hidden border-gray-400 hover:shadow-md hover:border-gray-500 hover:bg-gray-100 cursor-pointer">
+    <div 
+        class="bg-white rounded shadow border overflow-hidden border-gray-400 hover:shadow-md hover:border-gray-500 hover:bg-gray-100 cursor-pointer"
+        @click="$router.push({ name: 'PaparazziShowOverview', params: { id: paparazzi.id } })"
+    >
         <!-- Image. -->
         <div 
             v-if="paparazzi.shot_count > 0"
