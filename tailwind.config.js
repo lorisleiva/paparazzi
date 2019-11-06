@@ -14,6 +14,7 @@ module.exports = {
     },
     variants: {
         textColor: ['responsive', 'hover', 'focus', 'group-hover'],
+        backgroundColor: ['responsive', 'odd', 'hover', 'focus'],
     },
     plugins: [
         require('tailwindcss-plugins/gradients'),
