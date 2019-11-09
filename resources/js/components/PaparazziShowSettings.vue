@@ -10,7 +10,7 @@
                 <base-input v-model="paparazzi.url" label="URL" class="mb-6"></base-input>
             </base-form-section>
 
-            <base-form-section title="Scheduler" class="mb-6 border-b pb-6">
+            <base-form-section title="Scheduler" class="mb-6 border-b">
                 <template #description>
                     In this section, you can define a frequency used by the paparazzi. If you feel confortable with <a class="font-semibold hover:underline" href="https://github.com/mtdowling/cron-expression#cron-expressions">CRON expressions</a>, you can provide more complex frequencies.
                 </template>
